@@ -1,0 +1,162 @@
+/* General body and html setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main container for the entire layout */
+.main-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  position: relative;
+  justify-content: space-between;
+}
+
+/* Sidebar styling */
+.left-sidebar {
+  background-color: #000;
+  padding: 2rem;
+  width: 80px; /* Keep the sidebar width */
+  text-align: center;
+  height: 100%; /* Full height */
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.social-links a:hover {
+  color: #b2b2b2;
+}
+
+/* Content area for text and image */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-left: 80px; /* Match the left sidebar width */
+}
+
+/* Navbar styling inside the white background */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar links */
+  padding: 0.5rem 0; /* Reduce padding to move it closer to the top */
+  width: calc(100vw - 80px); /* Ensure the navbar fits inside the viewport minus the sidebar width */
+  position: absolute;
+  top: 0; /* Position the navbar closer to the top */
+  z-index: 2; /* Ensure navbar is on top */
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Ensure links don't overflow */
+  left: 80px; /* Offset by sidebar width to ensure proper alignment */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap; /* Wrap links if needed on smaller screens */
+  gap: 1.5rem; /* Adjust spacing between links */
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase; /* Capitalize the links */
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Add a blue hover effect */
+}
+
+/* Hero section styling */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero-image {
+  width: 250px; /* Slightly smaller size to fit better */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Main title styling */
+.main-title {
+  font-size: 2.5rem; /* Adjust the font size to fit better */
+  color: #000;
+  letter-spacing: 0.1rem;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/* Footer styling */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  width: 100%; /* Ensure the footer stretches across the screen */
+  position: fixed; /* Stick the footer to the bottom of the page */
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.footer-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links li {
+  margin-right: 1.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-links a:hover {
+  color: #b2b2b2;
+}
