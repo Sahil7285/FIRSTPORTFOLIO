@@ -1,15 +1,12 @@
 import React from 'react';
+import './footer.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <ul className="footer-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <p>&copy; {new Date().getFullYear()} Sahil Volvaikar. All Rights Reserved.</p>
-    </footer>
+    <div className="contact-container">
+      {/* <h2>Contact</h2> */}
+      <p>Welcome to the Contact page. You can put your contact details or a contact form here.</p>
+    </div>
   );
 };
 

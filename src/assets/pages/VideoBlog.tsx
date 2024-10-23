@@ -1,7 +1,7 @@
 import React from 'react';
-import './VideoBlog.css';
+import './videoblog.css';
 
-const VideoBlog: React.FC = () => {
+const videoBlog: React.FC = () => {
   return (
     <div className="contact-container">
       {/* <h2>Contact</h2> */}
@@ -9,5 +9,4 @@ const VideoBlog: React.FC = () => {
     </div>
   );
 };
-
-export default VideoBlog;
+export default videoBlog;

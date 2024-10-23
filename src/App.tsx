@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './assets/pages/navbar'
+import Navbar from './assets/pages/navbar';
 import About from './assets/pages/about';
 import Contact from './assets/pages/contact'
 import Education from './assets/pages/education';
 import Blog from './assets/pages/blog';
 import Gallery from './assets/pages/gallery';
-import VideoBlog from './assets/pages/Videoblog';
+import VideoBlog from './assets/pages/videoblog';
 import Project from './assets/pages/project';
-import Home from './assets/pages/Home';// Ensure this exists or remove
-import Footer from './assets/pages/Footer'; // Ensure this exists or remove
+import Home from './assets/pages/home';// Ensure this exists or remove
+import Footer from './assets/pages/footer'; // Ensure this exists or remove
 import './App.css'
 
 
