@@ -1,5 +1,5 @@
 import React from 'react';
-import reactLogo from '../assets/images/Photo1_Headshot_Thumbnail.jpg'; // Adjust the path if needed
+import reactLogo from '../images/Photo1_Headshot_Thumbnail.jpg';
 import '../App.css'; // Adjust the path if your CSS file is located elsewhere
 
 const Home: React.FC = () => {
