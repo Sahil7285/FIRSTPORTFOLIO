@@ -10,6 +10,7 @@ import VideoBlog from './assets/pages/Videoblog';
 import Project from './assets/pages/project';
 import Home from './assets/pages/Home';// Ensure this exists or remove
 import Footer from './assets/pages/Footer'; // Ensure this exists or remove
+import './App.css'
 
 
 const App: React.FC = () => {
