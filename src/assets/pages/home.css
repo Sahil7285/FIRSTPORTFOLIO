@@ -1,0 +1,153 @@
+/* Container for the home page */
+.home-container {
+  padding: 80px 144px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+  text-align: left; /* Ensures left text alignment */
+  /* Background gradient */
+}
+
+/* Intro section styling */
+.intro-section {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top-left */
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+/* Intro text section styling */
+.intro-text {
+  max-width: 50%;
+  text-align: left; /* Ensures left text alignment within intro text */
+}
+
+/* Large "Hello" text with gradient */
+.intro-heading {
+  font-size: 240px;
+  font-weight: lighter;
+  margin: 0;
+  text-align: left; /* Aligns the text to the left */
+  
+  /* Gradient color styling */
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #ff00cc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+/* Name and title styling */
+.intro-name {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-start; /* Aligns items within the flex container to the left */
+  text-align: left; /* Ensures left text alignment */
+}
+
+/* Description paragraph styling */
+.intro-description {
+  font-size: 16px;
+  color: #333;
+  margin-top: 24px;
+  line-height: 1.6;
+  text-align: justify; /* Aligns the text to the left */
+}
+
+  
+  /* CV button styling */
+  .cv-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .cv-button:hover {
+    /* Gradient color styling */
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #ff00cc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+  
+  /* Profile image styling */
+  
+  .profile-image {
+    width: 540px;
+    margin-right: 0;
+    float: right; /* Pushes the image fully to the right */
+  }
+  
+  .section-heading {
+    font-size: 52px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 16px;
+    margin-top: 120px; /* Top margin */
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  /* Projects section styling */
+  .projects-section {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+/* Individual project card styling */
+.project-card {
+  width: 564px; /* Fixed width */
+  height: 802px; /* Fixed height */
+  padding: 24px; /* Padding inside the card */
+  margin: 0 12px; /* 12px margin on each side to create a 24px gap between cards */
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; /* Ensures padding is included in the dimensions */
+}
+
+/* Profile image styling inside project card */
+.project-image {
+  width: 464px; /* Full width of the card */
+  height: 507px; /* Maintains aspect ratio */
+  max-width: 464px; /* Maximum width to keep image within the card */
+  margin-bottom: 24px; /* Spacing between image and description */
+  margin-top: 24px;
+  display: block;
+  border-radius: 16px;
+}
+/*project title text styling*/
+.project-title {
+  font-size: 24px;
+  color: #aeaeae;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding-left: 16px;
+  
+}
+
+
+/* Project description text styling */
+.project-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 100%; /* Full width of the card */
+  text-align: justify;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+  

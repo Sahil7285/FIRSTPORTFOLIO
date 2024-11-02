@@ -1,0 +1,84 @@
+/* Global reset and content wrapper */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Outfit", Helvetica;
+  box-sizing: border-box;
+}
+.content-wrapper {
+  max-width: 1152px; 
+  margin: 0 auto;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1152px;
+  height: 60px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusts content to place icon and links */
+  border-radius: 12px;
+  z-index: 1000;
+  margin-top: 24px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 0 24px; /* Space around the content */
+}
+
+/* Icon styling */
+.navbar-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-image {
+  width: 40px; /* Adjust icon size as needed */
+  height: auto;
+  margin-right: 560px;
+}
+
+/* Container for navbar links */
+.navbar-container {
+  display: flex;
+  justify-content: right;
+  flex-grow: 1;
+  align-items: center;
+}
+
+/* List styling for navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-right: 32px;
+}
+
+/* Individual link styling */
+.navbar-link a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-link a:hover {
+  color: #000;
+}
+
+/* Active link styling */
+.active a {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Ensure the navbar does not move or resize on different pages */
+body {
+  margin-top: 78px; /* Offset content below the fixed navbar */
+}

@@ -1,0 +1,154 @@
+/* Main container for the about page */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding-top: 120px;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 60px;
+}
+
+/* Introduction Heading styling */
+.intro-heading {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000; 
+  margin: 0;
+  max-width: 100%;
+  word-break: break-word; /* Avoid overflow */
+}
+
+.about-container .intro-heading {
+  font-size: 60px !important;
+}
+
+/* Bold emphasis styling */
+.highlight-bold {
+  font-weight: 500; /* Slightly bolder font weight */
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #ff00cc);
+  -webkit-background-clip: text; /* Ensures the gradient is clipped to text in WebKit browsers */
+  background-clip: text; /* For wider browser support */
+  color: transparent;
+}
+
+
+/* Profile image styling */
+.profile-image {
+  width: 696px;
+  height: auto;
+  text-align: center;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* Background Section Styling */
+.background-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.background-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Timeline styling */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card styling for each timeline item */
+.timeline-item {
+  background-color: #fff; /* White background for card */
+  border-radius: 10px;     /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.timeline-degree {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.timeline-institution {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+.timeline-dates {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 2px;
+}
+
+/* Work Experience Section Styling */
+.work-experience-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 60px;
+}
+
+.work-experience-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: left;
+}
+
+/* Work Experience Cards */
+.work-experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-experience-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.work-experience-position {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.work-experience-dates {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.work-experience-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}

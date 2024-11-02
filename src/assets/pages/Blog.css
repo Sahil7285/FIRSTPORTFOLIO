@@ -1,0 +1,102 @@
+/* Container for the blog page */
+.blog-container {
+  padding: 80px 144px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Each blog entry styling */
+.blog-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 240px; /* Space between each blog entry */
+}
+
+/* Blog image styling - aligns to the right */
+.blog-image1 {
+  width: 466px;
+  height: 659px;
+  border-radius: 24px;
+  margin-left: 40px; /* Space between text and image */
+  object-fit: cover;
+  align-self: flex-start; /* Align image to the top if the text content is taller */
+  order: 2; /* Moves the image to the right side in a flex row */
+  background-color: #fff; /* White background for the card effect */
+  padding: 16px; /* Padding around the image for the card */
+  box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+}
+
+/* Blog image styling */
+.blog-image {
+  width: 466px;
+  height: 659px;
+  border-radius: 24px;
+  margin-right: 40px; /* Space between image and text */
+  object-fit: cover;
+  background-color: #fff; /* White background for the card effect */
+  padding: 16px; /* Padding around the image for the card */
+  box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+}
+
+
+/* Text content styling */
+.blog-text-content {
+  max-width: 700px; /* Set max-width to control the content width */
+  text-align: left; /* Ensures all text is aligned to the left */
+}
+
+/* Blog title styling */
+.blog-title {
+  font-size: 60px; /* Large font size for emphasis */
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 12px 0; /* Top and bottom margin for spacing */
+}
+.blog-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin: 20px 0 10px;
+}
+/* Main description paragraph styling */
+.blog-description {
+  font-size: 16px; /* Slightly larger font for readability */
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px; /* Space between description and footer */
+  text-align: justify;
+}
+
+/* Footer or secondary paragraph styling */
+.blog-footer {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Blog title styling - aligned to left */
+.blog-title1 {
+  font-size: 80px; /* Large font size for emphasis */
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 12px 0; /* Top and bottom margin for spacing */
+  text-align: left;
+}
+
+/* Main description paragraph styling - aligned to left */
+.blog-description1 {
+  font-size: 16px; /* Slightly larger font for readability */
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 12px; /* Space between description and footer */
+  text-align: justify;
+}
+
+/* Footer or secondary paragraph styling - aligned to left */
+.blog-footer1 {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}

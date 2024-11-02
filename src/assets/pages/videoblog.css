@@ -1,0 +1,46 @@
+/* Main container for the video blog */
+.videoblog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+
+/* Video wrapper styling */
+.video-wrapper {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.3s ease;
+}
+
+/* Thumbnail styling */
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Video title styling */
+.video-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 20px 0;
+}
+
+/* Video description styling */
+.video-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}

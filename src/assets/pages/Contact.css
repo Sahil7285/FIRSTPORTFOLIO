@@ -1,0 +1,114 @@
+/* Main container for the contact page */
+.contact-container {
+  display: flex;
+  gap: 60px;
+  padding: 80px 144px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+  padding-bottom: 100px; /* Adds extra space at the bottom of the page */
+}
+
+/* Left section styling */
+.contact-left {
+  flex: 1;
+  padding-right: 20px;
+  position: relative; /* Position relative for pseudo-element positioning */
+  min-height: 700px; /* Increase the height to fit content comfortably */
+}
+
+/* Background image with 30% opacity using a pseudo-element */
+.contact-left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 566px;
+  height: 566px;
+  background-image: url('../images/map.jpg'); /* Replace with the actual path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* Set the opacity to 30% */
+  z-index: 0; /* Keeps the image behind the text */
+}
+
+/* Heading text styling */
+.contact-heading {
+  font-size: 120px;
+  font-weight: lighter;
+  line-height: 1.2;
+  color: #000;
+  margin-top: 120px;
+  position: relative; /* Position text above the background image */
+  z-index: 1;
+}
+
+/* Description and contact info text styling */
+.contact-description {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+  position: relative;
+  z-index: 1; /* Ensure text stays above the background image */
+  text-align: justify;
+}
+
+.contact-info {
+  margin-top: 60px;
+  font-size: 16px;
+  color: #aeaeae;
+  font-weight: bold;
+  position: relative;
+  z-index: 1; /* Ensure text stays above the background image */
+}
+
+/* Right section for form */
+.contact-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: none;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-send-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #333;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-send-button:hover {
+  background: #969494;
+}

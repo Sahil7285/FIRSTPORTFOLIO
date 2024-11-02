@@ -1,0 +1,51 @@
+/* Container for the entire project section */
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+  padding: 40px;
+  position: relative;
+}
+
+/* Large project number in background */
+.project-number {
+  font-size: 400px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05); /* Light, faint color */
+  position: absolute;
+  right: 40px;
+  z-index: 1;
+  top: 20px;
+}
+
+.project-title {
+  font-size: 120px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  text-align: right;
+}
+
+/* Project description styling */
+.project-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 466px;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Project image styling */
+.project-image {
+  width: 466px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 20px 20px 24px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensures text alignment if needed inside a container */
+  margin: 0; /* Removes any extra margins */
+}
+
