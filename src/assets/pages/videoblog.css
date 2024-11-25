@@ -1,46 +1,65 @@
 /* Main container for the video blog */
 .videoblog-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  max-width: 1200px; /* Matches the navbar width */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 20px; /* Adds space inside the container */
   font-family: 'Outfit', sans-serif;
-  text-align: center;
+  text-align: center; /* Centers the content */
 }
 
-/* Video wrapper styling */
+/* Video Section */
 .video-wrapper {
-  border: 2px solid #ddd;
-  border-radius: 12px;
+  width: 50%; /* Sets the video width to 50% of the container */
+  margin: 0 auto 20px auto; /* Centers the video and adds space below */
+  border: 6px solid #fff; /* White border around the video card */
+  border-radius: 12px; /* Rounded corners */
+  background-color: #fff; /* Background color for the border */
   overflow: hidden;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
   transition: transform 0.3s ease;
 }
 
-/* Thumbnail styling */
-.video-thumbnail {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  border-radius: 12px;
-}
-
 .video-wrapper:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* Video title styling */
-.video-title {
+.video-thumbnail {
+  width: 100%; /* Ensures the video thumbnail perfectly matches the container width */
+  height: auto;
+  border-radius: 6px; /* Slight inner rounding to complement the border */
+  cursor: pointer;
+}
+
+/* Text Section */
+.text-section {
+  width: 100%; /* Ensures the text spans the full container width */
+  max-width: 1200px; /* Matches the navbar width */
+  margin: 0 auto; /* Centers the text card below the video */
+  text-align: left; /* Align text to the left inside the card */
+}
+
+.text-card {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Adds space between cards */
+}
+
+.video-title,
+.planning-title,
+.reflection-title {
   font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin: 10px 0 20px 0;
+  margin-bottom: 16px;
 }
 
-/* Video description styling */
-.video-description {
+.video-description,
+.planning-entry,
+.reflection-entry {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
