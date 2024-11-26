@@ -30,7 +30,7 @@ const VideoBlog: React.FC = () => {
         <div className="text-card">
           <h1 className="video-title">Spaghetti Commercial</h1>
           <p className="video-description">
-            This is a description of the demo video. It provides an overview of the content, purpose, and any relevant information the viewer should know before watching.
+          Experience the rich taste and effortless cooking of Daily Basics Spaghetti, bringing joy to your everyday meals in every bite.
           </p>
         </div>
 
