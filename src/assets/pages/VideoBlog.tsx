@@ -1,6 +1,11 @@
 import React from 'react';
 import './videoblog.css';
 
+// Correcting image imports with valid variable names
+import scene1 from "../images/WhatsApp Image 2024-11-25 at 8.47.32 PM.jpeg";
+import scene2 from "../images/WhatsApp Image 2024-11-25 at 8.47.48 PM.jpeg";
+import scene3 from "../images/WhatsApp Image 2024-11-25 at 8.50.34 PM.jpeg";
+import scene4 from "../images/WhatsApp Image 2024-11-25 at 8.47.34 PM (1).jpeg";
 const VideoBlog: React.FC = () => {
   return (
     <div className="videoblog-container">
@@ -42,6 +47,34 @@ const VideoBlog: React.FC = () => {
             The storyline highlighted the process of making pasta, emphasizing how easy it is to prepare using "Daily Basics" spaghetti. The video concluded with beautifully plated pasta, featuring zoomed-in shots of the brand "Daily Basics" to reinforce the branding. This meticulous planning and execution allowed us to create a professional and engaging commercial.
           </p>
         </div>
+
+        {/* Image Gallery Section */}
+        <div className="text-card">
+          <h2 className="gallery-title">Image Gallery</h2>
+          <div className="image-gallery">
+            <img
+              src={scene1}
+              alt="Scene 1: Aesthetic Thumbnail"
+              className="gallery-image"
+            />
+            <img
+              src={scene2}
+              alt="Scene 2: Washing Vegetables"
+              className="gallery-image"
+            />
+            <img
+              src={scene3}
+              alt="Scene 3: Chopping Vegetables"
+              className="gallery-image"
+            />
+            <img
+              src={scene4}
+              alt="Scene 4: Plating Pasta"
+              className="gallery-image"
+            />
+          </div>
+        </div>
+
         {/* Card for Reflections */}
         <div className="text-card">
           <h2 className="reflection-title">Reflections on My Contribution</h2>
