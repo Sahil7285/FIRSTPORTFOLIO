@@ -39,6 +39,8 @@
   width: 40px; /* Adjust icon size as needed */
   height: auto;
   margin-right: 560px;
+  border-radius: 50%;
+  overflow: hidden; 
 }
 
 /* Container for navbar links */

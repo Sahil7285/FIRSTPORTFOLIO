@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <div className="about-container">
       <h1 className="intro-heading">
-        Hi I'm Sahil I'm an 
+        Hi I'm Sahil, I'm an 
         <span className="highlight-bold"> Architect</span> <br /> turned <span className="highlight-bold">Product Designer</span>
       </h1>
       <img src={profileImage} alt="Sahil Volvaikar" className="profile-image" />

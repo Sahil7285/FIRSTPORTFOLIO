@@ -104,11 +104,16 @@
   font-weight: bold;
   color: #333;
   border: 2px solid #333;
-  background: none;
+  background-color: #fff;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease; /* Include color change in transition */
+  border-radius: 50px; /* Make the button round */
 }
 
+/* Hover effect with linear gradient */
 .contact-send-button:hover {
-  background: #969494;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #ff00cc); /* Apply gradient on hover */
+  color: transparent; /* Make text transparent to show gradient */
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text; /* For other browsers */
 }

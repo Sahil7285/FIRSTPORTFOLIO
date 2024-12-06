@@ -13,20 +13,6 @@
   margin-bottom: 240px; /* Space between each blog entry */
 }
 
-/* Blog image styling - aligns to the right */
-.blog-image1 {
-  width: 466px;
-  height: 659px;
-  border-radius: 24px;
-  margin-left: 40px; /* Space between text and image */
-  object-fit: cover;
-  align-self: flex-start; /* Align image to the top if the text content is taller */
-  order: 2; /* Moves the image to the right side in a flex row */
-  background-color: #fff; /* White background for the card effect */
-  padding: 16px; /* Padding around the image for the card */
-  box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.1); /* Shadow for the card */
-}
-
 /* Blog image styling */
 .blog-image {
   width: 466px;
@@ -37,10 +23,12 @@
   background-color: #fff; /* White background for the card effect */
   padding: 16px; /* Padding around the image for the card */
   box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.1); /* Shadow for the card */
-  transform: scale(1.05); 
+  transition: transform 0.3s ease; /* Animation for hover effect */
 }
-
-
+/* Apply scale effect on hover */
+.blog-image:hover {
+  transform: scale(1.05); /* Scale up the image by 5% */
+}
 /* Text content styling */
 .blog-text-content {
   max-width: 700px; /* Set max-width to control the content width */
@@ -54,13 +42,15 @@
   color: #000;
   margin: 0 0 12px 0; /* Top and bottom margin for spacing */
 }
+
 .blog-subtitle {
   font-size: 20px;
   font-weight: bold;
   color: #555;
   margin: 20px 0 10px;
 }
-/* Main description paragraph styling */
+
+/* Blog description styling */
 .blog-description {
   font-size: 16px; /* Slightly larger font for readability */
   line-height: 1.8;
@@ -69,35 +59,40 @@
   text-align: justify;
 }
 
-/* Footer or secondary paragraph styling */
-.blog-footer {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
+/* Button styling for Like, Share, Comment */
+.blog-interactions {
+  display: flex;
+  gap: 16px; /* Space between buttons */
+  justify-content: flex-start;
+  margin-top: 40px; /* Add space between the image and the buttons */
 }
 
-/* Blog title styling - aligned to left */
-.blog-title1 {
-  font-size: 80px; /* Large font size for emphasis */
-  font-weight: bold;
-  color: #000;
-  margin: 0 0 12px 0; /* Top and bottom margin for spacing */
-  text-align: left;
-}
-
-/* Main description paragraph styling - aligned to left */
-.blog-description1 {
-  font-size: 16px; /* Slightly larger font for readability */
-  line-height: 1.8;
+.blog-interactions button {
+  background-color: #fff;
+  border: 1px solid #ddd; /* Light gray border for the buttons */
   color: #333;
-  margin-bottom: 12px; /* Space between description and footer */
-  text-align: justify;
+  font-size: 14px;
+  padding: 10px 20px; /* Padding for button size */
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Footer or secondary paragraph styling - aligned to left */
-.blog-footer1 {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-  text-align: justify;
+.blog-interactions button:hover {
+  background-color: #f0f0f0; /* Light hover effect */
+  transform: scale(1.05); /* Slight hover effect for a soft scale */
+}
+
+.comments-section input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.comments-section input:focus {
+  border-color: #007bff; /* Blue focus color */
 }
